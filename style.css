@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+.hidden { display: none; }
+#noteList { list-style: none; padding: 0; }
+#noteList li { cursor: pointer; padding: 5px; border: 1px solid #ccc; margin-bottom: 5px; }
+#noteContent { border: 1px solid #ccc; padding: 5px; min-height: 100px; margin-bottom: 10px; }
+
