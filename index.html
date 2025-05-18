@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Note and Game Mod App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="auth">
+  <h2>Login / Register</h2>
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button id="loginBtn">Login</button>
+  <button id="registerBtn">Register</button>
+</div>
+
+<div id="app" class="hidden">
+  <h2>Notes</h2>
+  <input type="text" id="search" placeholder="Search notes">
+  <button id="newNoteBtn">New Note</button>
+  <ul id="noteList"></ul>
+  <div id="editor" class="hidden">
+    <input type="text" id="noteTitle" placeholder="Title">
+    <div id="noteContent" contenteditable="true"></div>
+    <button id="saveNoteBtn">Save</button>
+    <button id="cancelEditBtn">Cancel</button>
+  </div>
+
+  <h2>Game Modification</h2>
+  <label>Score: <input type="number" id="gameScore"></label>
+  <label>Level: <input type="number" id="gameLevel"></label>
+  <label>Items: <input type="text" id="gameItems" placeholder="Comma separated"></label>
+  <button id="saveGameBtn">Save Game Data</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
